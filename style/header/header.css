@@ -1,0 +1,243 @@
+/* @import "../main/style.css"; */
+
+
+/* header */
+.header{
+    position: relative;
+    margin: 55px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+/* logo */
+.icon{
+    transform: scale(1.2);
+}
+.logo{
+    margin: 9px 9px 3px 9px;
+    padding: 0;
+    line-height: 8px;
+    font-weight: 600;
+}
+.logo_code{
+    color: #e44645;
+}
+.logo_hr{
+    width: 8px;
+    border: 0;
+    border-top: 2px solid  #e44645;
+    transform: translate(-2px, -2px);
+}
+.logo_store{
+    margin-top: 2px;
+    font-size: 10px;
+    letter-spacing: 7px;
+    color: rgb(91, 88, 88);
+    font-weight: 600;
+}
+
+/* nav */
+.nav_wrapper{
+    /* padding-right: 15px; */
+}
+.nav{
+    display: flex;
+    list-style: none;
+    background-color: white;
+}
+.nav .nav_select{
+    border: 0;
+    font-size: 13px;
+    font-weight: 600;
+    outline: none;
+    color: rgb(91, 88, 88);
+}
+.nav .nav_select:hover{
+    color:  #e44645;
+    position: relative;
+}
+.nav li{
+    margin-right: 18px;
+}
+.nav a{
+    font-size: 13px;
+    font-weight: 700;
+    /* text-decoration: none; */
+    color: rgb(91, 88, 88);
+}
+.nav a:hover{
+    color:  #e44645;
+    position: relative;
+}
+.nav a:hover::after{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 1px;
+    display: block;
+    height: 2px;
+    width: 8px;
+    background-color: #e44645;
+}
+.nav_magnifier{
+    height: 14px;
+    width: 14px;
+}
+.nav_basket{
+    position: relative;
+    border: 3px solid #555050;
+    padding: 0 16px 0 15px;
+    display: flex;
+    height: 43px;
+    width: 138px;
+    line-height: 42px;
+    vertical-align: middle;
+    margin-left: 45px;
+
+}
+.nav_wrapper{
+    display: flex;
+}
+
+/* active */
+.nav .nav__active{
+    color:  #e44645;
+    position: relative;
+}
+.nav .nav__active::after{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 1px;
+    display: block;
+    height: 2px;
+    width: 8px;
+    background-color: #e44645;
+}
+
+/* basket_number */
+.basket_number{
+    box-sizing: content-box;
+    position: absolute;
+    right: -17px;
+    border: 5px solid white;
+    top: calc( 50% - 16px);
+    height: 22px;
+    width: 22px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 23px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+.basket_price{
+    font-size: 14px;
+}
+.basket_price span{
+    font-size: 14px;
+    margin-right: 4px;
+    font-weight: 700;
+}
+
+
+/* nav _ bag-img */
+.shopping-bag{
+    height: 22px;
+    width: 15px;
+    margin: auto 9px auto 0;
+    position: relative;
+}
+.bag_handle, .bag_basket, .bag_hr{
+position: absolute;
+}
+.bag_handle{
+    left: calc(50% - 3.5px);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid  #e44645;
+}
+.bag_basket{
+    top: 5px;
+    height: 13px;
+    width: 18px;
+    background-color:  #e44645;
+
+}
+.bag_hr{
+    top: 19px;
+    border: 0 ;
+    border-bottom: 2px solid  #e44645;
+    width: 18px;
+}
+
+
+/* nav - cross */
+.header-menu--mobil {
+    display: none;
+}
+
+.header__menu-icon-wrapper {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.5);
+}
+
+.header__menu-icon {
+    position: relative;
+    width: 12px;
+    height: 2px;
+    background-color: black;
+}
+
+.header__menu-icon::before {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    content: attr(data-el);
+    width: 12px;
+    height: 2px;
+    background-color: black;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.header__menu-icon::after {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: attr(data-el);
+    width: 12px;
+    height: 2px;
+    background-color: black;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.header__menu-icon.menu-icon-active {
+    background-color: transparent;
+}
+
+.header__menu-icon.menu-icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    background-color: #e44645;
+}
+
+.header__menu-icon.menu-icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    background-color: #e44645;
+}

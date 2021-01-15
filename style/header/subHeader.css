@@ -1,0 +1,47 @@
+/* @import "../main/style.css"; */
+
+.subHeader{
+    min-height: 150px;
+    filter: grayscale(50%);
+    width: 100vw;
+    background-color: lightgray;
+    background-image: url(../../images/bg_head.png);
+}
+
+.subHeader__info{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    line-height: 150px;
+    vertical-align: middle;
+}
+@media(min-width:320px) and (max-width:475px) {
+    .subHeader{
+        min-height: 70px;
+    }
+    .subHeader__info{
+        line-height: 70px;
+    }
+}
+.heading span{
+    font-size: 24px;
+}
+.breadСrumbs a{
+    font-size: 13px;
+    font-weight: 500;
+    opacity: .9;
+    text-decoration: none;
+    color: rgb(91, 88, 88);
+}
+.breadСrumbs a+a:before {
+    padding: 8px;
+    color: black;
+    content: "›";
+    font-size: 17px;
+    opacity: .9;
+  }
+.breadСrumbs a:first-child{
+    font-weight: 700;
+    opacity: 1;
+}

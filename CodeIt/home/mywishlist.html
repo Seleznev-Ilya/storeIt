@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/main/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>CodeIT</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="../home.html">
+
+                    <div class="icon">
+                        <div class="logo">
+                            <p><span class="logo_code">Code</span><span class="logo_it">IT</span></p><br>
+                            <hr class="logo_hr">
+                            <p class="logo_store">STORE</p>
+                        </div>
+                    </div>
+                </a>
+                <nav>
+                    <div class="nav_wrapper">
+                        <ul class="nav hide">
+                            <li><a class="home nav__active" href="../home.html">HOME</a></li>
+                            <li>
+                                <select class="nav_select">
+                                    <option>ALL BRANDS</option>
+                                    <option>XIOMI MOBILE</option>
+                                    <option>APPLE MOBILE</option>
+                                </select>
+                            </li>
+                            <li><a class="latest" href="../latest.html">LATEST</a></li>
+                            <li><a class="featured" href="../featured.html">FEATURED</a></li>
+                            <li><a class="about" href="../about.html">ABOUT</a></li>
+                            <li><a class="blog" href="../blog.html">BLOG</a></li>
+                            <li><a class="contact" href="../contact.html">CONTACT</a></li>
+                            <li><a href="../home.html"><img class="nav_magnifier" src="../../images/icons/magnifier.png"
+                                        alt="magnifier"></a></li>
+                        </ul>
+                        <div class="nav__menu-mobile">
+                            <div class="header_basket">
+                                <a href="../basket.html">
+                                    <div class="nav_basket">
+                                        <div class="shopping-bag">
+                                            <div class="bag_handle"></div>
+                                            <div class="bag_basket"></div>
+                                            <hr class="bag_hr">
+                                        </div>
+                                        <div class="basket_price">
+                                            <!-- <span class="basket_price-span">$ 0.00</span> -->
+                                            <span id="basketPriceSpan">$ 0.00</span>
+                                        </div>
+                                        <!-- <div class="basket_number hideA">0</div> -->
+                                        <div id="basketNumber" class="basket_number hideA">0</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header__menu header__menu--hide_desktop">
+                                <div class="header__menu-icon-wrapper">
+                                    <div class="header__menu-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="subHeader">
+            <div class="container">
+                <div class="subHeader__info">
+                    <h2 class="heading"><span>MY WISHLIST</span></h2>
+                    <div class="breadСrumbs"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="filter">
+            <div class="container">
+                <div class="filter_wrapper">
+
+                    <div class="filter_magnifier">
+
+                        <img class="magnifier" src="../../images/icons/magnifier.png" alt="magnifier">
+
+                        <form class="filter_form" onsubmit="return false;">
+                            <input class="filter_input " type="text" data-on="true">
+                        </form>
+                    </div>
+
+                    <div class="filter_clear">
+                        <p>CLEAR LIST</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="goods">
+            <div class="container">
+                <div id="list">
+
+                </div>
+                <div id="slider">
+
+                </div>
+            </div>
+        </section>
+        <hr class="main_hr">
+    </main>
+    <footer>
+        <section class="services">
+            <div class="container">
+                <div class="services_wrapper">
+                    <div class="whitespace"></div>
+
+                    <div class="services_item">
+                        <div class="services_item-img">
+                            <img src="../../images/icons/like.png" alt="like">
+                        </div>
+                        <div class="services_item-des">
+                            <p class="services_item-heading">FULL WARRENTY</p>
+                            <p class="services_item-p">Read About Our Warrenty</p>
+                        </div>
+                    </div>
+
+
+                    <div class="services_item">
+                        <div class="services_item-img">
+                            <img src="../../images/icons/delivery-truck-silhouette.png" alt="like">
+                        </div>
+                        <div class="services_item-des">
+                            <p class="services_item-heading">EXPRESS SHIPPIN</p>
+                            <p class="services_item-p">Local & Internationla Shipping</p>
+                        </div>
+                    </div>
+
+
+                    <div class="services_item">
+                        <div class="services_item-img">
+                            <img src="../../images/icons/speech-bubble.png" alt="like">
+                        </div>
+                        <div class="services_item-des">
+                            <p class="services_item-heading">MOBAIL BLOG</p>
+                            <p class="services_item-p">Discas Your Favorite Phone</p>
+                        </div>
+                    </div>
+
+
+                    <div class="services_item">
+                        <div class="services_item-img">
+                            <img src="../../images/icons/headphones.png" alt="like">
+                        </div>
+                        <div class="services_item-des">
+                            <p class="services_item-heading">24/7 SUPPORT</p>
+                            <p class="services_item-p">Get Full Support via Chat</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts_wrapper">
+                    <div class="contacts_wrapper-text">
+                        <p>SUBSCRIBE TO LATEST SMARTPHONES</p>
+                        <p>NEWS & GREAT DEALS WE OFFER</p>
+                    </div>
+                    <div class="contacts_wrapper_input">
+
+                        <form onsubmit="return false;">
+                            <div class="envelope">
+                                <img class="envelope_img" src="../../images/icons/email.png" alt="email">
+                            </div>
+                            <input type="email" id="email" pattern=".+@gmail.com" size="30" required
+                                placeholder="ENTER YOUR EMAIL ADDRESS..." value="exemple@gmail.com">
+                        </form>
+                    </div>
+                    <div class="contacts_wrapper-links">
+                        <a href="#">
+
+                            <div class="link_item link_item1">
+                                <div class="link_item-img1"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+
+                            <div class="link_item link_item2">
+                                <div class="link_item-img2"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+
+                            <div class="link_item link_item3">
+                                <div class="link_item-img3"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+
+                            <div class="link_item link_item4">
+                                <div class="link_item-img4"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+
+                            <div class="link_item link_item5">
+                                <div class="link_item-img5"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+
+                            <div class="link_item link_item6">
+                                <div class="link_item-img6"></div>
+                            </div>
+                        </a>
+                        <a href="#">
+
+                            <div class="link_item link_item7">
+                                <div class="link_item-img7"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="footer">
+                    <p>COPIRYGHT &copy; 2015 <span>CODEITSTORE</span> ALL RIGHTA RESERVED</p>
+                    <div class="footer_img">
+                        <div class="footer_img-item1">
+
+                        </div>
+                        <div class="footer_img-item2">
+
+                        </div>
+                        <div class="footer_img-item3">
+
+                        </div>
+                        <div class="footer_img-item4">
+
+                        </div>
+                        <div class="footer_img-item5">
+
+                        </div>
+                        <div class="footer_img-item6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+    <script type="module" src="../../scripts/constants.js"></script>
+    <script type="module" src="../../scripts/header.js"></script>
+    <script type="module" src="../../scripts/main.js"></script>
+    <script type="module" src="../../scripts/store.js"></script>
+    <script type="module" src="../../scripts/footer.js"></script>
+</body>
+
+</html>

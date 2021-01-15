@@ -1,0 +1,45 @@
+@import "../main/normalize.css/normalize.css";
+@import "../header/header.css";
+@import "../header/header_Media.css";
+@import "../header/subHeader.css";
+@import "../main_tag/main.css";
+@import "../footer.css";
+
+*{
+    padding: 0;
+    margin: auto 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+main{
+    min-height: 45vh;
+}
+input{
+    outline: none;
+}
+body{
+    min-width: 320px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    max-width: 1140px; 
+    margin: 0 auto ; 
+    padding: 0 5px;
+    
+}
+.hideA{
+    display: none;
+}
+@media  (min-width: 320px) and (max-width: 1232px) {
+    .container{ 
+        padding: 0 25px;
+    }
+    .hide{
+        display: none;
+    }
+}
+
